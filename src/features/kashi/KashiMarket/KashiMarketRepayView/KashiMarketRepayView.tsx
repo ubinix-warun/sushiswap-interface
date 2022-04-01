@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, JSBI, maximum, ZERO } from '@sushiswap/core-sdk'
 import Typography from 'app/components/Typography'
 import {
   KashiMarketDetailsView,
@@ -14,6 +13,7 @@ import SwapAssetPanel from 'app/features/trident/swap/SwapAssetPanel'
 import { tryParseAmount, unwrappedToken } from 'app/functions'
 import { useV2TradeExactOut } from 'app/hooks/useV2Trades'
 import React, { FC, useCallback, useState } from 'react'
+import { CurrencyAmount, JSBI, maximum, ZERO } from 'sushiswap-sdk-nervos'
 
 export const KashiMarketRepayView: FC = () => {
   const { i18n } = useLingui()

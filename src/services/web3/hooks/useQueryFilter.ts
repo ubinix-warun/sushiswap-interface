@@ -1,6 +1,6 @@
 import { Contract } from '@ethersproject/contracts'
-import { ChainId } from '@sushiswap/core-sdk'
 import stringify from 'fast-json-stable-stringify'
+import { ChainId } from 'sushiswap-sdk-nervos'
 import useSWR from 'swr'
 
 // @ts-ignore TYPE NEEDS FIXING

@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Currency, NATIVE, SUSHI, Token } from '@sushiswap/core-sdk'
 import { XDAI_TOKENS } from 'app/config/tokens'
 import { Feature } from 'app/enums'
 import { Chef, PairType } from 'app/features/onsen/enum'
@@ -30,6 +29,7 @@ import {
 } from 'app/services/graph'
 import toLower from 'lodash/toLower'
 import { useMemo } from 'react'
+import { ChainId, Currency, NATIVE, SUSHI, Token } from 'sushiswap-sdk-nervos'
 
 export default function useFarmRewards({ chainId = ChainId.ETHEREUM }) {
   // @ts-ignore TYPE NEEDS FIXING

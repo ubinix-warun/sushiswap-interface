@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@sushiswap/core-sdk'
+import { ChainId, Token } from 'sushiswap-sdk-nervos'
 
 // Default Ethereum chain tokens
 export const ALPHA = new Token(

@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
+import { CurrencyAmount, Token } from 'sushiswap-sdk-nervos'
 
 type TokenAddress = string
 

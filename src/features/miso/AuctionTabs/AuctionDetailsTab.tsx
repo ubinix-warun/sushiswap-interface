@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Percent } from '@sushiswap/core-sdk'
 import CopyHelper from 'app/components/AccountDetails/Copy'
 import QuestionHelper from 'app/components/QuestionHelper'
 import Typography from 'app/components/Typography'
@@ -10,6 +9,7 @@ import useTokenTemplateMap from 'app/features/miso/context/hooks/useTokenTemplat
 import { classNames, shortenAddress } from 'app/functions'
 import { useTotalSupply } from 'app/hooks/useTotalSupply'
 import React, { FC } from 'react'
+import { Percent } from 'sushiswap-sdk-nervos'
 
 interface AuctionDetailsTabStatProps {
   label: string

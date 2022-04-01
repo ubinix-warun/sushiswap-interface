@@ -1,7 +1,6 @@
 import { getAddress } from '@ethersproject/address'
 import { DuplicateIcon } from '@heroicons/react/outline'
 import { CheckIcon } from '@heroicons/react/solid'
-import { Token } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import DoubleCurrencyLogo from 'app/components/DoubleLogo'
 import AnalyticsContainer from 'app/features/analytics/AnalyticsContainer'
@@ -18,6 +17,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useMemo } from 'react'
 import { ExternalLink as LinkIcon } from 'react-feather'
+import { Token } from 'sushiswap-sdk-nervos'
 
 const chartTimespans = [
   {

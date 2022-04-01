@@ -1,8 +1,8 @@
-import { Currency, CurrencyAmount, Fraction, Price, ZERO } from '@sushiswap/core-sdk'
 import { LTV } from 'app/features/kashi/constants'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { unwrappedToken } from 'app/functions'
 import { useUSDCPrice } from 'app/hooks'
+import { Currency, CurrencyAmount, Fraction, Price, ZERO } from 'sushiswap-sdk-nervos'
 
 interface Payload {
   borrowAmount?: CurrencyAmount<Currency>

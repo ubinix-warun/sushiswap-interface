@@ -1,9 +1,9 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { Transactions } from 'app/features/transactions/types'
 import { formatNumber } from 'app/functions'
 import { getTransactions } from 'app/services/graph/fetchers'
 import stringify from 'fast-json-stable-stringify'
 import { useMemo } from 'react'
+import { ChainId } from 'sushiswap-sdk-nervos'
 import useSWR from 'swr'
 
 export interface LegacyTransactions {

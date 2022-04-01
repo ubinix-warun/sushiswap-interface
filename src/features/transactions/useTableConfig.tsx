@@ -1,6 +1,6 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { formatDateAgo, getExplorerLink } from 'app/functions'
 import React, { useMemo } from 'react'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 import ExternalLink from '../../components/ExternalLink'
 import { shortenAddress } from './table-utils'

@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 export interface SerializableTransactionReceipt {
   to: string

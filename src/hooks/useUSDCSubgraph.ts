@@ -1,7 +1,7 @@
-import { Currency, CurrencyAmount, Price, Token, USD } from '@sushiswap/core-sdk'
 import { useNativePrice, useTokens, useTridentTokens } from 'app/services/graph'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useMemo } from 'react'
+import { Currency, CurrencyAmount, Price, Token, USD } from 'sushiswap-sdk-nervos'
 
 /**
  * Returns the prices in USDC of the input currency

@@ -1,7 +1,7 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency } from '@sushiswap/core-sdk'
 import { FC } from 'react'
+import { Currency } from 'sushiswap-sdk-nervos'
 
 import { classNames } from '../../functions'
 import { Input as NumericalInput } from '../Input/Numeric'

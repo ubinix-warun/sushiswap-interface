@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, Fraction, JSBI } from '@sushiswap/core-sdk'
 import React from 'react'
+import { Currency, CurrencyAmount, Fraction, JSBI } from 'sushiswap-sdk-nervos'
 
 const CURRENCY_AMOUNT_MIN = new Fraction(JSBI.BigInt(1), JSBI.BigInt(1000000))
 

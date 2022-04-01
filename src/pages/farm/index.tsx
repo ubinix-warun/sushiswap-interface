@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import ExternalLink from 'app/components/ExternalLink'
 import Search from 'app/components/Search'
@@ -15,6 +14,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import React from 'react'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 export default function Farm(): JSX.Element {
   const { i18n } = useLingui()

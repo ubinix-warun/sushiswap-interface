@@ -2,7 +2,6 @@ import { Transition } from '@headlessui/react'
 import { ArrowDownIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Fraction, JSBI, ZERO } from '@sushiswap/core-sdk'
 import {
   KashiMarketBorrowButton,
   KashiMarketBorrowLeverageView,
@@ -15,6 +14,7 @@ import { KashiMarketCurrentPosition } from 'app/features/kashi/KashiMarket/Kashi
 import SwapAssetPanel from 'app/features/trident/swap/SwapAssetPanel'
 import { e10, tryParseAmount, unwrappedToken } from 'app/functions'
 import React, { FC, useCallback, useMemo, useRef, useState } from 'react'
+import { CurrencyAmount, Fraction, JSBI, ZERO } from 'sushiswap-sdk-nervos'
 
 interface KashiMarketBorrowView {}
 

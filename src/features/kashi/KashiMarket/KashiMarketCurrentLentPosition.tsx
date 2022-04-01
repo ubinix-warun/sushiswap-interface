@@ -1,10 +1,10 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Percent } from '@sushiswap/core-sdk'
 import Typography from 'app/components/Typography'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket/KashiMarketContext'
 import { classNames } from 'app/functions'
 import React, { FC } from 'react'
+import { CurrencyAmount, Percent } from 'sushiswap-sdk-nervos'
 
 interface KashiMarketCurrentLentPosition {
   setLentAmount?(x: string): void

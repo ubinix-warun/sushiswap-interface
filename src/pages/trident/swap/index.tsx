@@ -2,7 +2,6 @@ import { Transition } from '@headlessui/react'
 import { ArrowDownIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { TradeVersion, ZERO } from '@sushiswap/core-sdk'
 import RecipientField from 'app/components/RecipientField'
 import Typography from 'app/components/Typography'
 import { Feature } from 'app/enums'
@@ -38,6 +37,7 @@ import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useExpertModeManager } from 'app/state/user/hooks'
 import { TradeUnion } from 'app/types'
 import React, { useCallback, useMemo, useState } from 'react'
+import { TradeVersion, ZERO } from 'sushiswap-sdk-nervos'
 
 const Swap = () => {
   const { formattedAmounts, trade, priceImpact, isWrap, parsedAmounts, error } = _useSwapPage()

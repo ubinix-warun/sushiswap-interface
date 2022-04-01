@@ -3,7 +3,6 @@ import { ChevronDownIcon } from '@heroicons/react/outline'
 import { ArrowSmRightIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, JSBI, Percent, ZERO } from '@sushiswap/core-sdk'
 import QuestionHelper from 'app/components/QuestionHelper'
 import Tooltip from 'app/components/Tooltip'
 import Typography from 'app/components/Typography'
@@ -12,6 +11,7 @@ import { classNames, formatPercent, unwrappedToken } from 'app/functions'
 import { useBentoStrategies } from 'app/services/graph'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, Fragment } from 'react'
+import { Currency, CurrencyAmount, JSBI, Percent, ZERO } from 'sushiswap-sdk-nervos'
 
 interface KashiMarketLentDetailsView {
   lentAmount?: CurrencyAmount<Currency>

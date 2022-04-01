@@ -1,7 +1,7 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { GRAPH_HOST } from 'app/services/graph/constants'
 import { barHistoriesQuery, barQuery } from 'app/services/graph/queries/bar'
 import { request } from 'graphql-request'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 const BAR = {
   [ChainId.ETHEREUM]: 'matthewlilley/bar',

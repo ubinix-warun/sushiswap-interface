@@ -1,4 +1,4 @@
-import { ChainId, Currency } from '@sushiswap/core-sdk'
+import { ChainId, Currency } from 'sushiswap-sdk-nervos'
 
 export function currencyId(currency: Currency): string {
   if ([ChainId.CELO].includes(currency.chainId)) {

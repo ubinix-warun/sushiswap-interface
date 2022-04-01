@@ -3,7 +3,6 @@ import { Signature } from '@ethersproject/bytes'
 import { TransactionResponse } from '@ethersproject/providers'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, JSBI, KASHI_ADDRESS, Rebase } from '@sushiswap/core-sdk'
 import KashiCooker from 'app/entities/KashiCooker'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { minimum, toShare } from 'app/functions'
@@ -11,6 +10,7 @@ import { useBentoBoxContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
+import { Currency, CurrencyAmount, JSBI, KASHI_ADDRESS, Rebase } from 'sushiswap-sdk-nervos'
 
 export interface WithdrawExecutePayload {
   withdrawAmount?: CurrencyAmount<Currency>

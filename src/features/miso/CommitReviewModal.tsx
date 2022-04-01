@@ -1,7 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, ZERO } from '@sushiswap/core-sdk'
 import Chip from 'app/components/Chip'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import { RestrictedIcon } from 'app/components/Icon'
@@ -15,6 +14,7 @@ import { useContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import React, { FC, useCallback, useState } from 'react'
+import { Currency, CurrencyAmount, ZERO } from 'sushiswap-sdk-nervos'
 
 import { Auction } from './context/Auction'
 

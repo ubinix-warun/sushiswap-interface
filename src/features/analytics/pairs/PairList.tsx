@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { Token } from '@sushiswap/core-sdk'
 import DoubleCurrencyLogo from 'app/components/DoubleLogo'
 import Table from 'app/components/Table'
 import ColoredNumber from 'app/features/analytics/ColoredNumber'
@@ -7,6 +6,7 @@ import { formatNumber, formatNumberScale, formatPercent } from 'app/functions'
 import { aprToApy } from 'app/functions/convert/apyApr'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { Token } from 'sushiswap-sdk-nervos'
 
 interface PairListProps {
   pairs: {

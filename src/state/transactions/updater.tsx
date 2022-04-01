@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { retry, RetryableError, RetryOptions } from 'app/functions/retry'
 // import { routingInfo } from 'app/hooks/useBestTridentTrade'
 import { useActiveWeb3React } from 'app/services/web3'
@@ -7,6 +6,7 @@ import { useAddPopup, useBlockNumber } from 'app/state/application/hooks'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { selectTransactions } from 'app/state/transactions/selectors'
 import { useCallback, useEffect, useMemo } from 'react'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 // import { useRecoilValue } from 'recoil'
 import { checkedTransaction, finalizeTransaction } from './actions'

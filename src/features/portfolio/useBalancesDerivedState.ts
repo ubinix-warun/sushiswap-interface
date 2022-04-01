@@ -1,7 +1,7 @@
-import { Currency } from '@sushiswap/core-sdk'
 import { selectBalancesCurrency } from 'app/features/portfolio/portfolioSlice'
 import { useCurrency } from 'app/hooks/Tokens'
 import { useSelector } from 'react-redux'
+import { Currency } from 'sushiswap-sdk-nervos'
 
 type UseBalancesSelectedCurrency = () => Currency | undefined
 export const useBalancesSelectedCurrency: UseBalancesSelectedCurrency = () => {

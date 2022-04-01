@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { TradeVersion } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import Dots from 'app/components/Dots'
 import { useDerivedTridentSwapContext } from 'app/features/trident/swap/DerivedTradeContext'
@@ -13,6 +12,7 @@ import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useExpertModeManager } from 'app/state/user/hooks'
 import { TradeUnion } from 'app/types'
 import React, { FC, useCallback, useMemo } from 'react'
+import { TradeVersion } from 'sushiswap-sdk-nervos'
 
 import TridentApproveGate from '../TridentApproveGate'
 

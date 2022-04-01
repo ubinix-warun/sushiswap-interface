@@ -1,7 +1,7 @@
-import { ChainId, Currency, WNATIVE } from '@sushiswap/core-sdk'
 import useHttpLocations from 'app/hooks/useHttpLocations'
 import { WrappedTokenInfo } from 'app/state/lists/wrappedTokenInfo'
 import React, { FunctionComponent, useMemo } from 'react'
+import { ChainId, Currency, WNATIVE } from 'sushiswap-sdk-nervos'
 
 import Logo, { UNKNOWN_ICON } from '../Logo'
 
@@ -68,6 +68,7 @@ const PalmLogo = 'https://raw.githubusercontent.com/sushiswap/logos/main/token/p
 const MovrLogo = 'https://raw.githubusercontent.com/sushiswap/logos/main/token/movr.jpg'
 const FuseLogo = 'https://raw.githubusercontent.com/sushiswap/logos/main/token/fuse.jpg'
 const TelosLogo = 'https://raw.githubusercontent.com/sushiswap/logos/main/token/telos.jpg'
+const NervosLogo = 'https://raw.githubusercontent.com/ubinix-warun/sushiswap-logos/main/token/nervos.jpg'
 
 const LOGO: Record<ChainId, string> = {
   [ChainId.ETHEREUM]: EthereumLogo,

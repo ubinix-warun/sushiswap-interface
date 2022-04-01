@@ -1,5 +1,5 @@
-import { Currency, Token } from '@sushiswap/core-sdk'
 import { useMemo } from 'react'
+import { Currency, Token } from 'sushiswap-sdk-nervos'
 
 import { useUnsupportedTokens } from './Tokens'
 

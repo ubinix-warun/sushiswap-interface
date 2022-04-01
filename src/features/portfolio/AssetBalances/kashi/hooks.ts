@@ -1,6 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import useSearchAndSort from 'app/hooks/useSearchAndSort'
+import { Currency, CurrencyAmount } from 'sushiswap-sdk-nervos'
 
 export const reduceBalances = (balanceSources: CurrencyAmount<Currency>[]) =>
   Object.values(

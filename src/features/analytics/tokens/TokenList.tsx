@@ -1,11 +1,11 @@
 import { getAddress } from '@ethersproject/address'
-import { Token as CoreToken } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import LineGraph from 'app/components/LineGraph'
 import Table, { Column } from 'app/components/Table'
 import { formatNumber, formatPercent } from 'app/functions'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { Token as CoreToken } from 'sushiswap-sdk-nervos'
 
 import ColoredNumber from '../ColoredNumber'
 

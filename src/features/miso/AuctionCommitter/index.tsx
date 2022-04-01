@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, ZERO } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Input from 'app/components/Input'
@@ -15,6 +14,7 @@ import { classNames, maxAmountSpend, tryParseAmount } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useCurrencyBalance } from 'app/state/wallet/hooks'
 import React, { FC, useState } from 'react'
+import { CurrencyAmount, ZERO } from 'sushiswap-sdk-nervos'
 
 import AuctionCommitterSkeleton from './AuctionCommitterSkeleton'
 

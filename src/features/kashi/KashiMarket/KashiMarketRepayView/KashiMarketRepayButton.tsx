@@ -1,17 +1,6 @@
 import { Signature } from '@ethersproject/bytes'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import {
-  Currency,
-  CurrencyAmount,
-  JSBI,
-  KASHI_ADDRESS,
-  maximum,
-  TradeType,
-  WNATIVE_ADDRESS,
-  ZERO,
-} from '@sushiswap/core-sdk'
-import { Trade as LegacyTrade } from '@sushiswap/core-sdk/dist/entities/Trade'
 import Button from 'app/components/Button'
 import Typography from 'app/components/Typography'
 import { Warning, Warnings } from 'app/entities/Warnings'
@@ -22,6 +11,17 @@ import { useBentoBoxContract } from 'app/hooks'
 import { useBentoOrWalletBalance } from 'app/hooks/useBentoOrWalletBalance'
 import { useActiveWeb3React } from 'app/services/web3'
 import React, { FC, ReactNode, useState } from 'react'
+import {
+  Currency,
+  CurrencyAmount,
+  JSBI,
+  KASHI_ADDRESS,
+  maximum,
+  TradeType,
+  WNATIVE_ADDRESS,
+  ZERO,
+} from 'sushiswap-sdk-nervos'
+import { Trade as LegacyTrade } from 'sushiswap-sdk-nervos/dist/entities/Trade'
 
 export interface KashiMarketRepayButtonProps {
   view: KashiMarketView

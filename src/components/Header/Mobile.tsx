@@ -1,6 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { MenuIcon } from '@heroicons/react/outline'
-import { NATIVE } from '@sushiswap/core-sdk'
 import useMenu from 'app/components/Header/useMenu'
 import Web3Network from 'app/components/Web3Network'
 import Web3Status from 'app/components/Web3Status'
@@ -10,6 +9,7 @@ import { useETHBalances } from 'app/state/wallet/hooks'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { FC, Fragment, useState } from 'react'
+import { NATIVE } from 'sushiswap-sdk-nervos'
 
 import { NavigationItem } from './NavigationItem'
 

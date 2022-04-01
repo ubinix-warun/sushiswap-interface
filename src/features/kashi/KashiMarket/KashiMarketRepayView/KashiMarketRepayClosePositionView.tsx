@@ -2,7 +2,6 @@ import { Disclosure, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronDownIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount } from '@sushiswap/core-sdk'
 import CloseIcon from 'app/components/CloseIcon'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import QuestionHelper from 'app/components/QuestionHelper'
@@ -11,6 +10,7 @@ import Typography from 'app/components/Typography'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { classNames, unwrappedToken } from 'app/functions'
 import React, { FC, Fragment } from 'react'
+import { CurrencyAmount } from 'sushiswap-sdk-nervos'
 
 interface KashiMarketRepayClosePositionView {
   enabled: boolean

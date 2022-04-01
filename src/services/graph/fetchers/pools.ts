@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Token } from '@sushiswap/core-sdk'
 import { PoolType } from '@sushiswap/tines'
 import { Fee } from '@sushiswap/trident-sdk'
 import { GRAPH_HOST, TRIDENT } from 'app/services/graph/constants'
@@ -11,6 +10,7 @@ import {
   poolKpiQuery,
   poolKpisQuery,
 } from 'app/services/graph/queries'
+import { ChainId, Token } from 'sushiswap-sdk-nervos'
 
 import { TridentTransactionRawData, tridentTransactionsRawDataFormatter } from '../hooks/transactions/trident'
 import { pager } from './pager'

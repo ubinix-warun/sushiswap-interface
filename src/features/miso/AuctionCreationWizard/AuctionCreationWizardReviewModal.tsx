@@ -1,7 +1,6 @@
 import { parseUnits } from '@ethersproject/units'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CHAIN_KEY, CurrencyAmount, JSBI, Percent } from '@sushiswap/core-sdk'
 import MISO from '@sushiswap/miso/exports/all.json'
 import LoadingCircle from 'app/animation/loading-circle.json'
 import HeadlessUIModal from 'app/components/Modal/HeadlessUIModal'
@@ -18,6 +17,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import Lottie from 'lottie-react'
 import { useRouter } from 'next/router'
 import React, { FC, useCallback, useEffect, useMemo, useState } from 'react'
+import { CHAIN_KEY, CurrencyAmount, JSBI, Percent } from 'sushiswap-sdk-nervos'
 
 interface AuctionCreationWizardReviewModalProps {
   open: boolean

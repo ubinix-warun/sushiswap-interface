@@ -1,8 +1,8 @@
 import { getAddress } from '@ethersproject/address'
-import { Token } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import { formatNumber, formatPercent } from 'app/functions'
 import React, { useMemo } from 'react'
+import { Token } from 'sushiswap-sdk-nervos'
 
 export const useTableConfig = (chainId: number, tokens: any) => {
   const TokenColumns = useMemo(

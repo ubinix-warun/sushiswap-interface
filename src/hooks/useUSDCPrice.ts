@@ -1,5 +1,5 @@
-import { ChainId, Currency, CurrencyAmount, Price, Token, USD } from '@sushiswap/core-sdk'
 import { useMemo } from 'react'
+import { ChainId, Currency, CurrencyAmount, Price, Token, USD } from 'sushiswap-sdk-nervos'
 
 import { useActiveWeb3React } from '../services/web3'
 import useUSDCPriceSubgraph from './useUSDCSubgraph'

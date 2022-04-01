@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
+import { Currency, CurrencyAmount } from 'sushiswap-sdk-nervos'
 
 export enum LiquidityLauncherTemplate {
   PostAuctionLauncher = 1,

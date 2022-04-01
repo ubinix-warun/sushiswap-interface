@@ -2,8 +2,8 @@
 
 import { getAddress } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
-import { Token } from '@sushiswap/core-sdk'
 import { TokenAddressMap } from 'app/state/lists/hooks'
+import { Token } from 'sushiswap-sdk-nervos'
 
 /**
  * Returns true if the string value is zero in hex

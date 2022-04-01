@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { CurrencyAmount, JSBI } from '@sushiswap/core-sdk'
 import { useMemo, useState } from 'react'
+import { CurrencyAmount, JSBI } from 'sushiswap-sdk-nervos'
 
 function getNested(theObject: any, path: string, separator = '.') {
   try {

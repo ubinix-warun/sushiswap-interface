@@ -1,6 +1,6 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { useNativePrice, useOneDayBlock, useOneWeekBlock, useTokens } from 'app/services/graph'
 import { useEffect, useMemo, useState } from 'react'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 export default function useTokensAnalytics({ chainId = ChainId.ETHEREUM }) {
   const [loadState, setLoadState] = useState<'loading' | 'initial' | 'loaded'>('loading')

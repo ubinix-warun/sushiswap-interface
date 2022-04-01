@@ -1,9 +1,9 @@
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import { AssetCell } from 'app/features/portfolio/AssetBalances/AssetCell'
 import { Assets } from 'app/features/portfolio/AssetBalances/types'
 import { ValueCell } from 'app/features/portfolio/AssetBalances/ValueCell'
 import { formatPercent } from 'app/functions'
 import React, { useMemo } from 'react'
+import { Currency, CurrencyAmount } from 'sushiswap-sdk-nervos'
 
 export type CellProps = { cell: { value: CurrencyAmount<Currency> } }
 

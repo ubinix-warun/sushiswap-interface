@@ -4,7 +4,6 @@ import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon, SwitchVerticalIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CHAINLINK_ORACLE_ADDRESS, Currency, KASHI_ADDRESS } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import Container from 'app/components/Container'
 import Typography from 'app/components/Typography'
@@ -21,6 +20,7 @@ import { useCreateActionHandlers, useCreateState, useDerivedCreateInfo } from 'a
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useRouter } from 'next/router'
 import React, { Fragment, useCallback } from 'react'
+import { CHAINLINK_ORACLE_ADDRESS, Currency, KASHI_ADDRESS } from 'sushiswap-sdk-nervos'
 
 export default function Create() {
   const { i18n } = useLingui()

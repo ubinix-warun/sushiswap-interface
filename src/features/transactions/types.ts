@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 export interface TransactionTableData {
   type: string

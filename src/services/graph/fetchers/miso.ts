@@ -1,6 +1,6 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { pager } from 'app/services/graph'
 import { misoCommitmentsQuery } from 'app/services/graph/queries/miso'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 import { GRAPH_HOST } from '../constants'
 

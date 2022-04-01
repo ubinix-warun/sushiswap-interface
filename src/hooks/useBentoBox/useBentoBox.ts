@@ -1,11 +1,11 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { JSBI } from '@sushiswap/core-sdk'
 import { ERC20_ABI } from 'app/constants/abis/erc20'
 import { getContract } from 'app/functions'
 import { useBentoBoxContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
+import { JSBI } from 'sushiswap-sdk-nervos'
 
 import { batchAction, depositAction, harvestAction, withdrawAction } from './actions'
 

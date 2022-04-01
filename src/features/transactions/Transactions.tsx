@@ -1,7 +1,6 @@
 import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId } from '@sushiswap/core-sdk'
 import { LoadingSpinner } from 'app/components/LoadingSpinner'
 import {
   TABLE_TABLE_CLASSNAME,
@@ -17,6 +16,7 @@ import { useRouter } from 'next/router'
 import React, { FC } from 'react'
 // @ts-ignore TYPE NEEDS FIXING
 import { useFlexLayout, usePagination, useSortBy, useTable } from 'react-table'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 import Typography from '../../components/Typography'
 import { TablePageToggler } from './TablePageToggler'

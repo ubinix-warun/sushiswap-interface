@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Percent, TradeVersion } from '@sushiswap/core-sdk'
 import { toAmountCurrencyAmount } from 'app/functions'
 import { getTradeVersion } from 'app/functions/getTradeVersion'
 import useBentoRebases from 'app/hooks/useBentoRebases'
@@ -10,6 +9,7 @@ import TransactionConfirmationModal, {
 } from 'app/modals/TransactionConfirmationModal'
 import { TradeUnion } from 'app/types'
 import React, { FC, useMemo } from 'react'
+import { Percent, TradeVersion } from 'sushiswap-sdk-nervos'
 
 import SwapModalFooter from './SwapModalFooter'
 import SwapModalHeader from './SwapModalHeader'

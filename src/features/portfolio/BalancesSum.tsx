@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, NATIVE, ZERO } from '@sushiswap/core-sdk'
 import Typography, { TypographyVariant } from 'app/components/Typography'
 import { reduceBalances } from 'app/features/portfolio/AssetBalances/kashi/hooks'
 import SumUSDCValues from 'app/features/trident/SumUSDCValues'
@@ -10,6 +9,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useBentoBalancesV2ForAccount } from 'app/state/bentobox/hooks'
 import { useAllTokenBalancesWithLoadingIndicator, useCurrencyBalance } from 'app/state/wallet/hooks'
 import React, { FC, useMemo } from 'react'
+import { Currency, CurrencyAmount, NATIVE, ZERO } from 'sushiswap-sdk-nervos'
 
 export const LiquidityPositionsBalancesSum = () => {
   const { i18n } = useLingui()

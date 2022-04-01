@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from 'sushiswap-sdk-nervos'
 
 const analytics = {
   [ChainId.ETHEREUM]: 'https://analytics.sushi.com',

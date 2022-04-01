@@ -1,6 +1,6 @@
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { useSingleCallResult } from 'app/state/multicall/hooks'
 import { useMemo } from 'react'
+import { CurrencyAmount, Token } from 'sushiswap-sdk-nervos'
 
 import { useTokenContract } from './useContract'
 

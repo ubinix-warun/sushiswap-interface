@@ -3,8 +3,6 @@ import { ChevronDownIcon } from '@heroicons/react/outline'
 import { ArrowSmRightIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, Fraction, JSBI, Percent, TradeType } from '@sushiswap/core-sdk'
-import { Trade as LegacyTrade } from '@sushiswap/core-sdk/dist/entities/Trade'
 import QuestionHelper from 'app/components/QuestionHelper'
 import Tooltip from 'app/components/Tooltip'
 import Typography from 'app/components/Typography'
@@ -15,6 +13,8 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import React, { FC, Fragment, useState } from 'react'
+import { Currency, CurrencyAmount, Fraction, JSBI, Percent, TradeType } from 'sushiswap-sdk-nervos'
+import { Trade as LegacyTrade } from 'sushiswap-sdk-nervos/dist/entities/Trade'
 
 interface KashiMarketDetailsView {
   collateralAmount?: CurrencyAmount<Currency>

@@ -1,12 +1,12 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Token } from '@sushiswap/core-sdk'
 import Chip from 'app/components/Chip'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import { HeadlessUiModal } from 'app/components/Modal'
 import Typography from 'app/components/Typography'
 import { shortenAddress } from 'app/functions'
 import React, { FC } from 'react'
+import { Token } from 'sushiswap-sdk-nervos'
 
 interface ImportRow {
   token: Token

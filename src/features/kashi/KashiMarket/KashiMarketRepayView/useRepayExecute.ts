@@ -6,16 +6,6 @@ import { TransactionResponse } from '@ethersproject/providers'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import { toShare } from '@sushiswap/bentobox-sdk'
-import {
-  Currency,
-  CurrencyAmount,
-  JSBI,
-  KASHI_ADDRESS,
-  SUSHISWAP_MULTI_EXACT_SWAPPER_ADDRESS,
-  TradeType,
-  ZERO,
-} from '@sushiswap/core-sdk'
-import { Trade as LegacyTrade } from '@sushiswap/core-sdk/dist/entities/Trade'
 import KashiCooker from 'app/entities/KashiCooker'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { ZERO as BigNumberZERO } from 'app/functions'
@@ -24,6 +14,16 @@ import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCallback } from 'react'
+import {
+  Currency,
+  CurrencyAmount,
+  JSBI,
+  KASHI_ADDRESS,
+  SUSHISWAP_MULTI_EXACT_SWAPPER_ADDRESS,
+  TradeType,
+  ZERO,
+} from 'sushiswap-sdk-nervos'
+import { Trade as LegacyTrade } from 'sushiswap-sdk-nervos/dist/entities/Trade'
 
 export interface RepayExecutePayload {
   repayAmount?: CurrencyAmount<Currency>

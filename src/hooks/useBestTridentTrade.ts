@@ -1,14 +1,4 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import {
-  ChainId,
-  Currency,
-  CurrencyAmount,
-  JSBI,
-  Pair,
-  Trade as LegacyTrade,
-  TradeType,
-  WNATIVE,
-} from '@sushiswap/core-sdk'
 import { MultiRoute, RouteStatus } from '@sushiswap/tines'
 import {
   ConstantProductPool,
@@ -28,6 +18,16 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useBlockNumber } from 'app/state/application/hooks'
 import { TradeUnion } from 'app/types'
 import { useEffect, useMemo, useState } from 'react'
+import {
+  ChainId,
+  Currency,
+  CurrencyAmount,
+  JSBI,
+  Pair,
+  Trade as LegacyTrade,
+  TradeType,
+  WNATIVE,
+} from 'sushiswap-sdk-nervos'
 
 // import { atom, useSetRecoilState } from 'recoil'
 import { useAllCurrencyCombinations } from './useAllCurrencyCombinations'
