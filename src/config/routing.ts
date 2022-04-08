@@ -13,6 +13,7 @@ import * as HECO from './tokens/heco'
 import * as MATIC from './tokens/matic'
 import * as MOONBEAM from './tokens/moonbeam'
 import * as MOONRIVER from './tokens/moonriver'
+import * as NERVOS_TESTNET from './tokens/nervos'
 import * as OKEX from './tokens/okex'
 import * as PALM from './tokens/palm'
 import * as TELOS from './tokens/telos'
@@ -73,6 +74,7 @@ const WRAPPED_NATIVE_ONLY: ChainTokenList = {
   [ChainId.FUSE]: [WNATIVE[ChainId.FUSE]],
   [ChainId.TELOS]: [WNATIVE[ChainId.TELOS]],
   [ChainId.MOONBEAM]: [WNATIVE[ChainId.MOONBEAM]],
+  [ChainId.NERVOS_TESTNET]: [WNATIVE[ChainId.NERVOS_TESTNET]],
 }
 
 // used to construct intermediary pairs for trading
@@ -221,6 +223,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     MOONBEAM.WBTC,
     MOONBEAM.FRAX,
   ],
+  [ChainId.NERVOS_TESTNET]: [...WRAPPED_NATIVE_ONLY[ChainId.NERVOS_TESTNET], NERVOS_TESTNET.USDC, NERVOS_TESTNET.DAI],
 }
 
 export const ADDITIONAL_BASES: {
@@ -481,6 +484,16 @@ export const COMMON_BASES: ChainTokenList = {
     AVALANCHE.FRAX,
     // @ts-ignore TYPE NEEDS FIXING
     AVALANCHE.STG,
+  ],
+  [ChainId.NERVOS_TESTNET]: [
+    // @ts-ignore TYPE NEEDS FIXING
+    ...WRAPPED_NATIVE_ONLY[ChainId.NERVOS_TESTNET],
+    // @ts-ignore TYPE NEEDS FIXING
+    SUSHI[ChainId.NERVOS_TESTNET],
+    // @ts-ignore TYPE NEEDS FIXING
+    NERVOS_TESTNET.USDC,
+    // @ts-ignore TYPE NEEDS FIXING
+    NERVOS_TESTNET.DAI,
   ],
   [ChainId.HARMONY]: [
     // @ts-ignore TYPE NEEDS FIXING

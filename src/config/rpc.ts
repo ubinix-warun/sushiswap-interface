@@ -31,6 +31,7 @@ const RPC = {
   [ChainId.MOONRIVER]: 'https://rpc.moonriver.moonbeam.network',
   [ChainId.TELOS]: 'https://mainnet.telos.net/evm',
   [ChainId.MOONBEAM]: 'https://rpc.api.moonbeam.network',
+  [ChainId.NERVOS_TESTNET]: 'https://godwoken-testnet-web3-v1-rpc.ckbapp.dev',
 }
 
 export default RPC

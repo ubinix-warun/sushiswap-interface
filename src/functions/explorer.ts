@@ -84,6 +84,18 @@ const explorers = {
         return `${link}/${type}/${data}`
     }
   },
+  nervos: (link: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
+    switch (type) {
+      case 'transaction':
+        return `${link}/transaction/${data}`
+      case 'token':
+        return `${link}/tokens/${data}`
+      case 'address':
+        return `${link}/address/${data}`
+      default:
+        return `${link}/${type}/${data}`
+    }
+  },
 }
 interface ChainObject {
   [chainId: number]: {
@@ -204,6 +216,10 @@ const chains: ChainObject = {
   [ChainId.MOONBEAM]: {
     link: 'https://moonbeam.moonscan.io',
     builder: explorers.moonbeam,
+  },
+  [ChainId.NERVOS_TESTNET]: {
+    link: 'https://explorer.nervos.org/aggron',
+    builder: explorers.nervos,
   },
 }
 

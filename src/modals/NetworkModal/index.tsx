@@ -208,6 +208,17 @@ export const SUPPORTED_NETWORKS: Record<
     rpcUrls: ['https://rpc.api.moonbeam.network'],
     blockExplorerUrls: ['https://moonbeam.moonscan.io'],
   },
+  [ChainId.NERVOS_TESTNET]: {
+    chainId: '0x116E1',
+    chainName: 'Nervos Testnet',
+    nativeCurrency: {
+      name: 'Ckb',
+      symbol: 'CKB',
+      decimals: 18,
+    },
+    rpcUrls: ['https://godwoken-testnet-web3-v1-rpc.ckbapp.dev'],
+    blockExplorerUrls: ['https://explorer.nervos.org/aggron/'],
+  },
 }
 
 const NetworkModal: FC = () => {
@@ -240,6 +251,7 @@ const NetworkModal: FC = () => {
             ChainId.OKEX,
             ChainId.HECO,
             ChainId.PALM,
+            ChainId.NERVOS_TESTNET,
           ]
             .sort((key) => (chainId === key ? -1 : 0))
             .map((key: number, i: number) => {

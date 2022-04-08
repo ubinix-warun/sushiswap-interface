@@ -102,6 +102,7 @@ const LOGO: Record<ChainId, string> = {
   [ChainId.TELOS]: TelosLogo,
   [ChainId.HARDHAT]: EthereumLogo,
   [ChainId.MOONBEAM]: MoonbeamLogo,
+  [ChainId.NERVOS_TESTNET]: NervosLogo,
 }
 
 export interface CurrencyLogoProps {

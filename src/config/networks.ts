@@ -21,6 +21,7 @@ const Palm = 'https://raw.githubusercontent.com/sushiswap/icons/master/network/p
 const Moonriver = 'https://raw.githubusercontent.com/sushiswap/icons/master/network/moonriver.jpg'
 const Fuse = 'https://raw.githubusercontent.com/sushiswap/icons/master/network/fuse.jpg'
 const Telos = 'https://raw.githubusercontent.com/sushiswap/icons/master/network/telos.jpg'
+const Nervos = 'https://raw.githubusercontent.com/ubinix-warun/sushi-icons/master/network/nervos.jpg'
 
 export const NETWORK_ICON: Record<number, string> = {
   [ChainId.ETHEREUM]: Mainnet,
@@ -52,6 +53,7 @@ export const NETWORK_ICON: Record<number, string> = {
   [ChainId.FUSE]: Fuse,
   [ChainId.TELOS]: Telos,
   [ChainId.MOONBEAM]: Moonbeam,
+  [ChainId.NERVOS_TESTNET]: Nervos,
 }
 
 export const NETWORK_LABEL: Record<number, string> = {
@@ -84,4 +86,5 @@ export const NETWORK_LABEL: Record<number, string> = {
   [ChainId.FUSE]: 'Fuse',
   [ChainId.TELOS]: 'Telos EVM',
   [ChainId.MOONBEAM]: 'Moonbeam',
+  [ChainId.NERVOS_TESTNET]: 'Nervos Testnet',
 }
