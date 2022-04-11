@@ -1,0 +1,3 @@
+const MATIC_CHAINLINK_MAPPING = {}
+
+export default MATIC_CHAINLINK_MAPPING

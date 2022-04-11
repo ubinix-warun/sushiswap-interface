@@ -192,6 +192,8 @@ export const useLimitOrderDerivedCurrencies: UseLimitOrderDerivedCurrencies = ()
   const outputCurrency =
     useCurrency(outputCurrencyId === 'SUSHI' ? SUSHI_ADDRESS[chainId || 1] : outputCurrencyId) ?? undefined
 
+  // console.log(1,chainId, inputCurrency, outputCurrency)
+
   return useMemo(() => {
     return {
       inputCurrency,

@@ -82,6 +82,7 @@ function combineMaps(map1: TokenAddressMap, map2: TokenAddressMap): TokenAddress
     40: { ...map1[40], ...map2[40] }, // telos
     1284: { ...map1[1284], ...map2[1284] }, // moonbeam
     71393: { ...map1[71393], ...map2[71393] }, // nervos testnet
+    31337: { ...map1[31337], ...map2[31337] }, // hardhat
   }
 }
 

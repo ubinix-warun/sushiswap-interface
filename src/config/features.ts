@@ -64,6 +64,7 @@ const features: FeatureMap = {
   [ChainId.ARBITRUM]: [Feature.AMM, Feature.LIQUIDITY_MINING, Feature.ANALYTICS, Feature.BENTOBOX, Feature.KASHI],
   [ChainId.FUSE]: [Feature.AMM, Feature.LIQUIDITY_MINING, Feature.ANALYTICS],
   [ChainId.MOONBEAM]: [Feature.AMM, Feature.MISO, Feature.LIQUIDITY_MINING],
+  [ChainId.HARDHAT]: [Feature.AMM, Feature.LIQUIDITY_MINING],
   [ChainId.NERVOS_TESTNET]: [Feature.AMM, Feature.LIQUIDITY_MINING],
 }
 

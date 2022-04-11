@@ -53,6 +53,7 @@ export const NETWORK_ICON: Record<number, string> = {
   [ChainId.FUSE]: Fuse,
   [ChainId.TELOS]: Telos,
   [ChainId.MOONBEAM]: Moonbeam,
+  [ChainId.HARDHAT]: Mainnet,
   [ChainId.NERVOS_TESTNET]: Nervos,
 }
 
@@ -86,5 +87,6 @@ export const NETWORK_LABEL: Record<number, string> = {
   [ChainId.FUSE]: 'Fuse',
   [ChainId.TELOS]: 'Telos EVM',
   [ChainId.MOONBEAM]: 'Moonbeam',
+  [ChainId.HARDHAT]: 'Hardhat',
   [ChainId.NERVOS_TESTNET]: 'Nervos Testnet',
 }

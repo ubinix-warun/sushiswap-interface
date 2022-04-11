@@ -51,6 +51,9 @@ export default function Add() {
   const tokens = router.query.tokens
   const [currencyIdA, currencyIdB] = (tokens as string[]) || [undefined, undefined]
 
+  console.log(1, tokens)
+  console.log(1, currencyIdA, currencyIdB)
+
   const currencyA = useCurrency(currencyIdA)
   const currencyB = useCurrency(currencyIdB)
 
@@ -59,6 +62,8 @@ export default function Add() {
       ((currencyA && currencyEquals(currencyA, WNATIVE[chainId])) ||
         (currencyB && currencyEquals(currencyB, WNATIVE[chainId])))
   )
+
+  // console.log(1,currencyA, currencyB)
 
   const toggleWalletModal = useWalletModalToggle() // toggle wallet when disconnected
 

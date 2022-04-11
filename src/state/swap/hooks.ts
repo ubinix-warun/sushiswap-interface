@@ -243,7 +243,10 @@ function validatedRecipient(recipient: any): string | undefined {
 export function queryParametersToSwapState(parsedQs: ParsedQs, chainId: ChainId = ChainId.ETHEREUM): SwapState {
   let inputCurrency = parseCurrencyFromURLParameter(parsedQs.inputCurrency)
   let outputCurrency = parseCurrencyFromURLParameter(parsedQs.outputCurrency)
-  const eth = chainId === ChainId.CELO ? WNATIVE_ADDRESS[chainId] : 'ETH'
+  // console.log(chainId, inputCurrency, outputCurrency)
+  let eth = chainId === ChainId.CELO ? WNATIVE_ADDRESS[chainId] : 'ETH'
+  eth = chainId === ChainId.HARDHAT ? WNATIVE_ADDRESS[chainId] : 'ETH'
+
   const sushi = SUSHI_ADDRESS[chainId]
   if (inputCurrency === '' && outputCurrency === '') {
     inputCurrency = eth
@@ -254,6 +257,7 @@ export function queryParametersToSwapState(parsedQs: ParsedQs, chainId: ChainId 
     outputCurrency = inputCurrency === eth ? sushi : eth
   }
 
+  console.log(chainId, inputCurrency, outputCurrency)
   const recipient = validatedRecipient(parsedQs.recipient)
 
   return {
