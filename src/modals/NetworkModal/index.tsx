@@ -219,6 +219,17 @@ export const SUPPORTED_NETWORKS: Record<
     rpcUrls: ['https://godwoken-testnet-web3-v1-rpc.ckbapp.dev'],
     blockExplorerUrls: ['https://explorer.nervos.org/aggron/'],
   },
+  [ChainId.HARDHAT]: {
+    chainId: '0x7A69',
+    chainName: 'Hardhat Local',
+    nativeCurrency: {
+      name: 'Ethereum',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: ['https://localhost:8545'],
+    blockExplorerUrls: [],
+  },
 }
 
 const NetworkModal: FC = () => {
@@ -252,6 +263,7 @@ const NetworkModal: FC = () => {
             ChainId.HECO,
             ChainId.PALM,
             ChainId.NERVOS_TESTNET,
+            ChainId.HARDHAT,
           ]
             .sort((key) => (chainId === key ? -1 : 0))
             .map((key: number, i: number) => {

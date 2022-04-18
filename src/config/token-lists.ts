@@ -22,6 +22,7 @@ const UMA_LIST = 'https://umaproject.org/uma.tokenlist.json'
 const WRAPPED_LIST = 'wrapped.tokensoft.eth'
 const DHEDGE_LIST = 'https://list.dhedge.eth.link'
 const ARBITRUM_LIST = 'https://bridge.arbitrum.io/token-list-42161.json'
+const NT_LIST = 'https://raw.githubusercontent.com/ubinix-warun/sushiswap-sdk/canary/config/tokenlist.json'
 
 // lower index == higher priority for token import
 export const DEFAULT_LIST_OF_LISTS: string[] = [
@@ -38,6 +39,7 @@ export const DEFAULT_LIST_OF_LISTS: string[] = [
   KLEROS_LIST,
   NFTX_LIST,
   GEMINI_LIST,
+  NT_LIST,
   ARBITRUM_LIST,
   OPTIMISM_LIST,
   DHEDGE_LIST,
@@ -45,4 +47,4 @@ export const DEFAULT_LIST_OF_LISTS: string[] = [
 ]
 
 // default lists to be 'active' aka searched across
-export const DEFAULT_ACTIVE_LIST_URLS: string[] = [NFTX_LIST, YEARN_LIST, GEMINI_LIST]
+export const DEFAULT_ACTIVE_LIST_URLS: string[] = [NFTX_LIST, YEARN_LIST, GEMINI_LIST, NT_LIST]

@@ -28,6 +28,7 @@ export function listToTokenMap(list: TokenList): TokenAddressMap {
       console.error(new Error(`Duplicate token! ${token.address}`))
       return tokenMap
     }
+    if (token.chainId == 31337) console.log('listToTokenMap!', token)
     return {
       ...tokenMap,
       [token.chainId]: {
@@ -82,6 +83,7 @@ function combineMaps(map1: TokenAddressMap, map2: TokenAddressMap): TokenAddress
     40: { ...map1[40], ...map2[40] }, // telos
     1284: { ...map1[1284], ...map2[1284] }, // moonbeam
     71393: { ...map1[71393], ...map2[71393] }, // nervos testnet
+    31337: { ...map1[31337], ...map2[31337] }, // hardhat
   }
 }
 
@@ -125,6 +127,8 @@ export function useInactiveListUrls(): string[] {
 export function useCombinedActiveList(): TokenAddressMap {
   const activeListUrls = useActiveListUrls()
   const activeTokens = useCombinedTokenMapFromUrls(activeListUrls)
+  // console.log('useCombinedActiveList! 1', activeTokens) // DBG
+  // console.log('useCombinedActiveList! 2', TRANSFORMED_DEFAULT_TOKEN_LIST) //DBG
   return useMemo(() => combineMaps(activeTokens, TRANSFORMED_DEFAULT_TOKEN_LIST), [activeTokens])
 }
 

@@ -51,6 +51,7 @@ function useTokensFromMap(tokenMap: TokenAddressMap, includeUserAdded: boolean):
 
 export function useAllTokens(): { [address: string]: Token } {
   const allTokens = useCombinedActiveList()
+  // console.log('useAllTokens', allTokens) // DBG
   return useTokensFromMap(allTokens, true)
 }
 
@@ -138,7 +139,6 @@ export function useToken(tokenAddress?: string | null): Token | undefined | null
   const tokenContract = useTokenContract(address ? address : undefined, false)
   const tokenContractBytes32 = useBytes32TokenContract(address ? address : undefined, false)
   const token: Token | undefined = address ? tokens[address] : undefined
-
   const tokenName = useSingleCallResult(token ? undefined : tokenContract, 'name', undefined, NEVER_RELOAD)
   const tokenNameBytes32 = useSingleCallResult(
     token ? undefined : tokenContractBytes32,
@@ -150,7 +150,23 @@ export function useToken(tokenAddress?: string | null): Token | undefined | null
   const symbolBytes32 = useSingleCallResult(token ? undefined : tokenContractBytes32, 'symbol', undefined, NEVER_RELOAD)
   const decimals = useSingleCallResult(token ? undefined : tokenContract, 'decimals', undefined, NEVER_RELOAD)
 
+  console.log('useToken.useTokenContract() 0', token)
+  // console.log('useToken.useTokenContract() 0', tokenName)
+  // console.log('useToken.useTokenContract() 0', tokenNameBytes32)
+  console.log('useToken.useTokenContract() 1', tokenContract, address)
+  console.log('useToken.useTokenContract() 2', tokenContractBytes32)
+
   return useMemo(() => {
+    // console.log('useToken.useMemo() 1', token)
+    // console.log('useToken.useMemo() 2', tokenAddress)
+    // console.log('useToken.useMemo() 3', address)
+    // console.log('useToken.useMemo() 4', chainId)
+    console.log('useToken.useMemo() x', decimals)
+    console.log('useToken.useMemo() x', symbol)
+    console.log('useToken.useMemo() x', tokenName)
+    console.log('useToken.useMemo() 5', decimals.loading, symbol.loading, tokenName.loading)
+    console.log('useToken.useMemo() 6', decimals.result)
+
     if (token) return token
     if (tokenAddress === null) return null
     if (!chainId || !address) return undefined

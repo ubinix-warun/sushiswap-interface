@@ -221,6 +221,10 @@ const chains: ChainObject = {
     link: 'https://explorer.nervos.org/aggron',
     builder: explorers.nervos,
   },
+  [ChainId.HARDHAT]: {
+    link: 'http://localhost',
+    builder: explorers.nervos,
+  },
 }
 
 export function getExplorerLink(

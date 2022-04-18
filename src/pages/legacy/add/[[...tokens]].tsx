@@ -51,8 +51,12 @@ export default function Add() {
   const tokens = router.query.tokens
   const [currencyIdA, currencyIdB] = (tokens as string[]) || [undefined, undefined]
 
+  console.log('add', currencyIdA, currencyIdB)
+
   const currencyA = useCurrency(currencyIdA)
   const currencyB = useCurrency(currencyIdB)
+
+  console.log('add', currencyA, currencyB)
 
   const oneCurrencyIsWETH = Boolean(
     chainId &&

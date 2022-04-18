@@ -8,6 +8,7 @@ import * as CELO from './tokens/celo'
 import * as ETHEREUM from './tokens/ethereum'
 import * as FANTOM from './tokens/fantom'
 import * as FUSE from './tokens/fuse'
+import * as HARDHAT from './tokens/hardhat'
 import * as HARMONY from './tokens/harmony'
 import * as HECO from './tokens/heco'
 import * as MATIC from './tokens/matic'
@@ -74,6 +75,7 @@ const WRAPPED_NATIVE_ONLY: ChainTokenList = {
   [ChainId.FUSE]: [WNATIVE[ChainId.FUSE]],
   [ChainId.TELOS]: [WNATIVE[ChainId.TELOS]],
   [ChainId.MOONBEAM]: [WNATIVE[ChainId.MOONBEAM]],
+  [ChainId.HARDHAT]: [WNATIVE[ChainId.HARDHAT]],
   [ChainId.NERVOS_TESTNET]: [WNATIVE[ChainId.NERVOS_TESTNET]],
 }
 
@@ -223,6 +225,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     MOONBEAM.WBTC,
     MOONBEAM.FRAX,
   ],
+  [ChainId.HARDHAT]: [...WRAPPED_NATIVE_ONLY[ChainId.HARDHAT], HARDHAT.USDC, HARDHAT.DAI],
   [ChainId.NERVOS_TESTNET]: [...WRAPPED_NATIVE_ONLY[ChainId.NERVOS_TESTNET], NERVOS_TESTNET.USDC, NERVOS_TESTNET.DAI],
 }
 
@@ -484,6 +487,16 @@ export const COMMON_BASES: ChainTokenList = {
     AVALANCHE.FRAX,
     // @ts-ignore TYPE NEEDS FIXING
     AVALANCHE.STG,
+  ],
+  [ChainId.HARDHAT]: [
+    // @ts-ignore TYPE NEEDS FIXING
+    ...WRAPPED_NATIVE_ONLY[ChainId.HARDHAT],
+    // @ts-ignore TYPE NEEDS FIXING
+    SUSHI[ChainId.HARDHAT],
+    // @ts-ignore TYPE NEEDS FIXING
+    HARDHAT.USDC,
+    // @ts-ignore TYPE NEEDS FIXING
+    HARDHAT.DAI,
   ],
   [ChainId.NERVOS_TESTNET]: [
     // @ts-ignore TYPE NEEDS FIXING
